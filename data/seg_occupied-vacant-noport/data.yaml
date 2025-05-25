@@ -1,0 +1,11 @@
+train: C:\Users\Keno\source_repos\pon_map\pon_wd\seg_occupied-vacant-noport\Train.txt
+val: C:\Users\Keno\source_repos\pon_map\pon_wd\seg_occupied-vacant-noport\Valid.txt
+
+nc: 5  # Number of classes
+
+names:
+  0: occupied
+  1: vacant
+  2: no port
+  3: nap_skeleton
+  4: no dust cap

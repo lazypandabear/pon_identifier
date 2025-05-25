@@ -1,0 +1,14 @@
+# Model paths
+pose_model_path: "models/pose_model.pt"
+seg_model_path: "models/segment_model.pt"
+
+# Image path
+image_path: "data/13.jpg"
+
+# Grid configuration
+grid:
+  cols: 2
+  rows: 12
+
+# Output directory
+output_dir: "output" 

@@ -1,0 +1,13 @@
+import os
+
+train_dir = r"C:\Users\Keno\source_repos\pon_map\pon_wd\seg_occupied-vacant-noport\val\images"
+train_txt = "C:/Users/Keno/source_repos/pon_map/pon_wd/seg_occupied-vacant-noport/Valid.txt"
+
+# Get all image paths
+image_files = [os.path.join(train_dir, f) for f in os.listdir(train_dir) if f.endswith(('.jpg', '.png'))]
+
+# Save to Train.txt
+with open(train_txt, "w") as f:
+    f.write("\n".join(image_files))
+
+print(f"Generated {train_txt} with {len(image_files)} images.")
