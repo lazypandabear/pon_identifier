@@ -1,0 +1,6 @@
+path: C:/Users/Keno/source_repos/pon_map/pon_wd/pose_napskeleton
+train: C:\Users\Keno\source_repos\pon_map\pon_wd\pose_napskeleton\Train.txt
+val: C:\Users\Keno\source_repos\pon_map\pon_wd\pose_napskeleton\Valid.txt
+kpt_shape: [7, 3]  # 7 keypoints with (x, y, visibility)
+names:
+  0: nap_skeleton

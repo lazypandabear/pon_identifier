@@ -1,0 +1,15 @@
+import os
+
+# Define paths
+valid_images = r"C:\Users\Keno\source_repos\pon_map\pon_wd\seg_occupied-vacant-noport\val\images"
+valid_txt = "C:/Users/Keno/source_repos/pon_map/pon_wd/seg_occupied-vacant-noport/Valid.txt"
+
+# Get all image filenames in the validation folder
+image_files = [f for f in os.listdir(valid_images) if f.endswith(('.jpg', '.png', '.jpeg'))]
+
+# Create the valid.txt file with full paths
+with open(valid_txt, "w") as f:
+    for img in image_files:
+        f.write(f"{valid_images}/{img}\n")
+
+print(f"Valid.txt generated with {len(image_files)} entries.")
