@@ -2,12 +2,12 @@ import cv2
 import numpy as np
 import yaml
 import argparse
-from src.detection import detect_port_face
-from src.geometry import order_corners, compute_homography, overlay_grid, visualize_steps
+from detection import detect_port_face
+from geometry import order_corners, compute_homography, overlay_grid, visualize_steps
 
 def main():
     parser = argparse.ArgumentParser(description='Process an image to detect port face and overlay grid.')
-    parser.add_argument('--config', type=str, default='config/default.yaml', help='Path to config file')
+    parser.add_argument('--config', type=str, default='/config/default.yaml', help='Path to config file')
     parser.add_argument('--image', type=str, help='Path to input image (overrides config)')
     args = parser.parse_args()
 
